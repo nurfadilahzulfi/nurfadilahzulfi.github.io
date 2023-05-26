@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/letter-z.png">
+    <title>Web Programming</title>
+    <!-- bootstrap 5 css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+    <!-- custom css -->
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <style>
+      body{
+        background-color: aliceblue;
+      }
+      .footer {
+        background-color: #f8f9fa;
+        padding: 20px 0;
+      }
+
+     .footer-text {
+        text-align: center;
+        margin-bottom: 0;
+      }
+      li {
+        list-style: none;
+        margin: 20px 0 20px 0;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .sidebar {
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        margin-left: -300px;
+        transition: 0.6s;
+      }
+
+      .active-main-content {
+        margin-left: 250px;
+      }
+
+      .active-sidebar {
+        margin-left: 0;
+      }
+
+      #main-content {
+        transition: 0.4s;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!--Sidebar-->
+    <div>
+      <div class="sidebar p-4 bg-success" id="sidebar">
+        <h4 class="mb-5 text-white">Nur Fadilah Zulfi</h4>
+        <li>
+          <a class="text-white" href="index.html">
+            <i class="bi bi-house-fill mr-2"></i>
+            Dashboard
+          </a>
+        </li>
+        <li>
+          <a class="text-white" href="populer.html">
+            <i class="bi bi-fire mr-2"></i>
+            Pemrograman Populer
+          </a>
+        </li>
+        <li>
+          <a class="text-white" href="tutorial.html">
+            <i class="bi bi-code-slash mr-2"></i>
+            Tutorial
+          </a>
+        </li>
+        <li>
+            <a class="text-white" href="https://github.com/nurfadilahzulfi" target="_blank">
+              <i class="bi bi-github mr-2"></i>
+              Github
+            </a>
+          </li>
+          <li>
+            <a class="text-white" href="https://instagram.com/fadilah_zulfi" target="_blank">
+              <i class="bi bi-instagram mr-2"></i>
+              Instagram
+            </a>
+          </li>
+      </div>
+    </div>
+    <div class="p-4" id="main-content">
+      <button class="btn btn-success" id="button-toggle">
+        <i class="bi bi-list"></i>
+      </button>
+      
+       <!--Ini gambar untuk link tutorial-->
+    <div class="container text-center mt-5">
+      <div class="row align-items-start">
+        <div class="col-md-4 mb-3">
+          <div class="card">
+              <img src="kategori/web/img_web/css.png" class="card-img-top" alt="css" />
+              <div class="card-body">
+                  <h5><a href="">Tutorial CSS : Menentukan ukuran elemen dengan satuan yang tepat</a></h5>
+                <p class="card-text">Pelajari gimana cara menentukan ukuran elemen dengan satuan yang tepat di CSS. Banyak yang sering salah dalam memilih satuan seperti piksel, persen, em, rem, vh, vw, dll.</p>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card">
+              <img src="kategori/web/img_web/tailwind.png" class="card-img-top" alt="tailwind" />
+              <div class="card-body">
+                  <h5><a href="tutorial_html.html" target="_blank">Tutorial Tailwind : Dasar Tailwind CSS untuk Pemula</a></h5>
+                <p class="card-text">Di tutorial ini kamu akan belajar dasar-dasar Tailwind CSS seperti: Apa itu Tailwind? Mengapa sih pakai Tailwind? dan gimana cara pakai Tailwind?</p>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card">
+              <img src="kategori/web/img_web/express-rest-api-ts.png" class="card-img-top" alt="rest-api" />
+              <div class="card-body">
+                  <h5><a href="">Tutorial Membuat REST API dengan Express, Typescirpt, dan PostgreSQL</a></h5>
+                <p class="card-text">Di tutorial ini kamu akan belajar gimana cara membuat REST API dengan Express, Typescript, dan PostgreSQL. Selain itu, kamu juga akan mepelajari Prisma ORM dan Setup Docker untuk jalankan service PostgreSQL.</p>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card">
+              <img src="kategori/web/img_web/alpinejs-fetch.png" class="card-img-top" alt="c-header" />
+              <div class="card-body">
+                  <h5><a href="">Cara Fetch API dengan Alpinejs untuk Ambil Data dari Backend</a></h5>
+                <p class="card-text">Pelajari cara mengambil data (JSON) dari backend dengan Alpinejs dan fetch API Javascript.</p>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card">
+              <img src="kategori/web/img_web/tailwind-image-zoom.png" class="card-img-top" alt="c-sharp" />
+              <div class="card-body">
+                  <h5><a href="">Tutorial Tailwind: Membuat Card dengan Image Zoom-in Saat Hover</a></h5>
+                <p class="card-text">Di Tutorial Tailwind kali ini, kita akan belajar membuat komponen Card dengan efek image zoom-in saat mouse hover.</p>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card">
+              <img src="kategori/web/img_web/hugo-tailwind.png" class="card-img-top" alt="c-sharp" />
+              <div class="card-body">
+                  <h5><a href="">Cara Menggunakan Tailwind CSS untuk Membuat Tema Hugo</a></h5>
+                <p class="card-text">Pelajari gimana cara menggunakan TailwindCSS untuk membuat tema Hugo</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  
+    <script>
+      // code apabila button di clik
+      document.getElementById("button-toggle").addEventListener("click", () => {
+        //apabila logo button di clik maka akan menggeser
+        document.getElementById("sidebar").classList.toggle("active-sidebar");
+
+        // when the button-toggle is clicked, it will add/remove the active-main-content class
+        document.getElementById("main-content").classList.toggle("active-main-content");
+      });
+    </script>
+    <footer class="footer" style="background-color: aliceblue;">
+      <div class="container">
+        <p class="footer-text">&copy; 2023 Nur Fadilah Zulfi. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
